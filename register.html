@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Form Validation Using JS</h1>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="card card-body">
+            <h1>Register</h1>
+            <form id="register-details">
+                <div class="form-group row">
+                    <!-- <label for="name">Full Name</label> -->
+                    <input type="text" class="form-control form-control-sm" name="name" id="name" placeholder="Full Name" autofocus>
+                    <span id="spanName" hidden></span>
+                </div>
+                <div class="form-group row">
+                    <!-- <label for="email">Email</label> -->
+                    <input type="email" class="form-control form-control-sm" name="email" id="email" placeholder="Email">
+                    <span id="spanEmail" hidden></span>
+                </div>
+                <div class="form-group row">
+                    <!-- <label for="gender">Gender</label> -->
+                    <select class="form-control form-control-sm" name="gender" id="gender">
+                        <option value="#">Select Gender</option>
+                        <option value="f">Female</option>
+                        <option value="m">Male</option>
+                        <option value="o">Other</option>
+                    </select>
+                    <span id="spanGender" hidden></span>
+                </div>
+                <input class="btn btn-dark" type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>
